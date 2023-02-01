@@ -2,16 +2,19 @@
 1. Część frontendowa - Tak z wykorzystaniem gotowego szablonu MVC
 2. Część backendowa - Tak z wykrozystaniem wersji .NET 7.
 
-1.a) Frontend zawiera ekran logowania oraz rejestracji użytkownika - TAK z wykorzystaniem dostępnego z biblioteki Mictrosft.AspNetCore.Idetntiy.UI/IdentityUser z .NET
-1.b) Frontend zawiera stronę z wyświetlaną listą dodanych urządzeń, możliwość dodania nowego urządzenia do listy oraz usunięcia urządzenia z listy. - TAK.
+1. a) Frontend zawiera ekran logowania oraz rejestracji użytkownika - TAK z wykorzystaniem dostępnego z biblioteki Mictrosft.AspNetCore.Idetntiy.UI/IdentityUser z .NET
+1. b) Frontend zawiera stronę z wyświetlaną listą dodanych urządzeń, możliwość dodania nowego urządzenia do listy oraz usunięcia urządzenia z listy. - TAK.
 
-2.a) Część backendowa to standarodwe web API z dwoma kontrolerami (users, devices). - TAK, kontroler Device utworzony bezpośrednio w kodzie natomiast kontroler Users z wykorzystaniem dostępnego z biblioteki Microsoft.AspNetCore.Idetntiy/IdentityUser z .NET
-2.b) Musi ona posiadać dowolną bazę danych (najlepiej SQLite aby osobne oprogramowania nie były konieczne do uruchomienia). - Tak jest SQLite, dołączony do projektu.
-2.c) Tabela users powinna zawierać wszystkich użytkowników posiadających dostęp do korzystania z aplikacji. - Tak, użytkonicy dodawani są do dtabeli po zarejetrowaniu.
-2.d) Tabela device powinna posiadać minimum kolumny Id, Name, SerialNumber. - Tak, zawiera
+2. a) Część backendowa to standarodwe web API z dwoma kontrolerami (users, devices). - TAK, kontroler Device utworzony bezpośrednio w kodzie natomiast kontroler Users z wykorzystaniem dostępnego z biblioteki Microsoft.AspNetCore.Idetntiy/IdentityUser z .NET
+2. b) Musi ona posiadać dowolną bazę danych (najlepiej SQLite aby osobne oprogramowania nie były konieczne do uruchomienia). - Tak jest SQLite, dołączony do projektu.
+2. c) Tabela users powinna zawierać wszystkich użytkowników posiadających dostęp do korzystania z aplikacji. - Tak, użytkonicy dodawani są do dtabeli po zarejetrowaniu.
+2. d) Tabela device powinna posiadać minimum kolumny Id, Name, SerialNumber. - Tak, zawiera
+
 TODO: 2.e) wzorce projektowe Repository pattern, Unityofowrk, mapper, Viewmodels...
-2.f) Logowanie do aplikacji powinno odbywać się w opraciu o konta użytkowników, którzy zarejestrowali się w aplikacji lub przez zewnętrznego dostawcę (np. konto systemu Windows). - Tak jest wewnętrzny mechanizm logowania/rejestracji oparty o bibliotekę Microsoft.AspNetCore.Idetntiy/IdentityUser z .NET
-2.g) Aplikacja musi dowolnym sposobem trzymać stan zalogownego użytkownika np. (cookie, access token w przeglądarce). - tak wykorzystano domyślny mchanizm Cookies - AspNetCore.Identity.Application  
+
+2. f) Logowanie do aplikacji powinno odbywać się w opraciu o konta użytkowników, którzy zarejestrowali się w aplikacji lub przez zewnętrznego dostawcę (np. konto systemu Windows). - Tak jest wewnętrzny mechanizm logowania/rejestracji oparty o bibliotekę Microsoft.AspNetCore.Idetntiy/IdentityUser z .NET
+2. g) Aplikacja musi dowolnym sposobem trzymać stan zalogownego użytkownika np. (cookie, access token w przeglądarce). - tak wykorzystano domyślny mchanizm Cookies - AspNetCore.Identity.Application  
+
 TODO: 2.h) Napisanie kilku testów jednostkowych zostanie oceniono dodatkowo.
 
 
