@@ -1,0 +1,23 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h2>This is Super App</h2>
+
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <p>You are logged in! You can use the function <a asp-area="" asp-controller="Devices" asp-action="Index">Devices</a></p> 
+    }
+    else
+    {
+        <p>Register/Log in to use the function Devices</p>
+    }
+
+
+    
+</div>
