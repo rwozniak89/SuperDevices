@@ -1,4 +1,4 @@
-﻿@model IEnumerable<SuperDevices.WebApp.Modules.Devices.Models.Device>
+﻿@model IEnumerable<SuperDevices.Domain.Dtos.DeviceDto>
 
 @{
     ViewData["Title"] = "Index";
@@ -18,22 +18,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.SerialNumber)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Creator)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DateCreate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DateEdit)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Editor)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Version)
-            </th>
-            <th></th>
+            <th>Options</th>
         </tr>
     </thead>
     <tbody>
@@ -44,21 +29,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.SerialNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Creator)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateCreate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateEdit)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Editor)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Version)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

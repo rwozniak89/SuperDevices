@@ -1,6 +1,6 @@
-﻿using SuperDevices.WebApp.Modules.Base;
+﻿using SuperDevices.Base.Entities;
 
-namespace SuperDevices.WebApp.Modules.Devices.Models
+namespace SuperDevices.Domain.Entities
 {
     public class Device : BaseEntity
     {

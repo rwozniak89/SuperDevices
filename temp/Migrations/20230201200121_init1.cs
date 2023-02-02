@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace SuperDevices.WebApp.Data.Migrations
+namespace SuperDevices.DataAccess.Migrations
 {
     /// <inheritdoc />
     public partial class init1 : Migration

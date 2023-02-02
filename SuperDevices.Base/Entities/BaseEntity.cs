@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace SuperDevices.WebApp.Modules.Base
+namespace SuperDevices.Base.Entities
 {
     public abstract class BaseEntity : IBaseEntity
     {
@@ -9,18 +9,18 @@ namespace SuperDevices.WebApp.Modules.Base
         [Key]
         public Guid Id { get; set; }
 
-        public string Creator { get; set; }
+        public string Creator { get; set; } = string.Empty;
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd HH:mm}", ApplyFormatInEditMode = true, NullDisplayText = "", ConvertEmptyStringToNull = true)]
         [Required]
-        public DateTime DateCreate { get; protected set; }
+        public DateTime DateCreate { get; set; }
 
-        public DateTime? DateEdit { get; set; }
+        public DateTime DateEdit { get; set; }
 
-        public string Editor { get; set; }
+        public string Editor { get; set; } = string.Empty;
 
-        public int Version { get; set; }
+        public int Version { get; set; } = 1;
 
     }
 }

@@ -1,4 +1,4 @@
-﻿@model SuperDevices.WebApp.Modules.Devices.Models.Device
+﻿@model SuperDevices.Domain.Dtos.DeviceDto
 
 @{
     ViewData["Title"] = "Details";
@@ -23,28 +23,16 @@
             @Html.DisplayFor(model => model.SerialNumber)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Creator)
+            @Html.DisplayNameFor(model => model.CreateInfo)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Creator)
+            @Html.DisplayFor(model => model.CreateInfo)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateCreate)
+            @Html.DisplayNameFor(model => model.EditorInfo)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateCreate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateEdit)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateEdit)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Editor)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Editor)
+            @Html.DisplayFor(model => model.EditorInfo)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Version)

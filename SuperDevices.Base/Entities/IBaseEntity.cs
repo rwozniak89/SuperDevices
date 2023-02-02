@@ -1,4 +1,4 @@
-﻿namespace SuperDevices.WebApp.Modules.Base
+﻿namespace SuperDevices.Base.Entities
 {
     public interface IBaseEntity
     {

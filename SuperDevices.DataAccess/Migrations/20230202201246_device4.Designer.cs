@@ -4,15 +4,15 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SuperDevices.WebApp.Data;
+using SuperDevices.DataAccess.Context;
 
 #nullable disable
 
-namespace SuperDevices.WebApp.Data.Migrations
+namespace SuperDevices.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230201200121_init1")]
-    partial class init1
+    [Migration("20230202201246_device4")]
+    partial class device4
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -216,7 +216,7 @@ namespace SuperDevices.WebApp.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("SuperDevices.WebApp.Modules.Devices.Models.Device", b =>
+            modelBuilder.Entity("SuperDevices.Domain.Entities.Device", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -229,7 +229,7 @@ namespace SuperDevices.WebApp.Data.Migrations
                     b.Property<DateTime>("DateCreate")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime?>("DateEdit")
+                    b.Property<DateTime>("DateEdit")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Editor")
