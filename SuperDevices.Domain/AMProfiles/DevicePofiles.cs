@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SuperDevices.Domain.AMProfiles
 {
-    internal class DevicePofiles : Profile
+    public class DevicePofiles : Profile
     {
         public DevicePofiles() 
         {

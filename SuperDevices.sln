@@ -5,11 +5,13 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperDevices.WebApp", "SuperDevices.WebApp\SuperDevices.WebApp.csproj", "{E4F5BD20-BFB4-4F6B-A4F1-DDFE7BDC28C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperDevices.DataAccess", "SuperDevices.DataAccess\SuperDevices.DataAccess.csproj", "{4C9CB35D-E433-475D-9A3B-E58228B5632F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperDevices.DataAccess", "SuperDevices.DataAccess\SuperDevices.DataAccess.csproj", "{4C9CB35D-E433-475D-9A3B-E58228B5632F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperDevices.Base", "SuperDevices.Base\SuperDevices.Base.csproj", "{338B74FA-32A2-4F1F-AEA7-ED3346653F23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperDevices.Base", "SuperDevices.Base\SuperDevices.Base.csproj", "{338B74FA-32A2-4F1F-AEA7-ED3346653F23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperDevices.Domain", "SuperDevices.Domain\SuperDevices.Domain.csproj", "{5F7B2D2F-EAFD-47D4-806E-15CC71013437}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperDevices.Domain", "SuperDevices.Domain\SuperDevices.Domain.csproj", "{5F7B2D2F-EAFD-47D4-806E-15CC71013437}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperDevices.Tests", "SuperDevices.Tests\SuperDevices.Tests.csproj", "{49272F8F-353E-4503-B90A-6FE0B42F4C46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5F7B2D2F-EAFD-47D4-806E-15CC71013437}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F7B2D2F-EAFD-47D4-806E-15CC71013437}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F7B2D2F-EAFD-47D4-806E-15CC71013437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49272F8F-353E-4503-B90A-6FE0B42F4C46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49272F8F-353E-4503-B90A-6FE0B42F4C46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49272F8F-353E-4503-B90A-6FE0B42F4C46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49272F8F-353E-4503-B90A-6FE0B42F4C46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
