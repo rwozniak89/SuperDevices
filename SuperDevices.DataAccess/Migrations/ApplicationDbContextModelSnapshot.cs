@@ -247,6 +247,41 @@ namespace SuperDevices.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Devices");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("1aa64943-a2b8-4615-b1b4-623a2e6b1541"),
+                            Creator = "x@x.com",
+                            DateCreate = new DateTime(2023, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DateEdit = new DateTime(2023, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Editor = "x@x.com",
+                            Name = "Telewizor X",
+                            SerialNumber = "12345",
+                            Version = 1
+                        },
+                        new
+                        {
+                            Id = new Guid("582258d3-6621-4b41-82e5-1e89f1c4fff1"),
+                            Creator = "x@x.com",
+                            DateCreate = new DateTime(2023, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DateEdit = new DateTime(2023, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Editor = "x@x.com",
+                            Name = "Radio Y",
+                            SerialNumber = "987654",
+                            Version = 1
+                        },
+                        new
+                        {
+                            Id = new Guid("c7deaff3-6b2a-4727-966a-5f2b9a2ceb1a"),
+                            Creator = "x@x.com",
+                            DateCreate = new DateTime(2023, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DateEdit = new DateTime(2023, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Editor = "x@x.com",
+                            Name = "Pilot Z",
+                            SerialNumber = "123",
+                            Version = 1
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -22,7 +22,7 @@ namespace SuperDevices.DataAccess.Repository
 
         public bool IsNull()
         {
-            if (_context.Devices == null)
+            if (_context.Set<T>() == null)
                 return true;
             //if (!_context.Devices.Any())
             //return true;

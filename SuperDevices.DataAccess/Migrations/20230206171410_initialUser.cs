@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace SuperDevices.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class start1 : Migration
+    public partial class initialUser : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

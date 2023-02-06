@@ -3,7 +3,8 @@
 2. Czêœæ backendowa - Tak z wykorzystaniem wersji .NET 7.
 
 1.a) Frontend zawiera ekran logowania oraz rejestracji u¿ytkownika - TAK z wykorzystaniem dostêpnego z biblioteki Mictrosft.AspNetCore.Idetntiy.UI/IdentityUser z .NET
-przyk³adowy login:x1@x.pl has³o:1qazXSW@ ale mo¿na za³o¿yæ swoje konto.
+przyk³adowy login:x1@x.pl has³o:C!T7!u.fWSREgHX ale mo¿na za³o¿yæ swoje konto.
+inny login:x@x.pl has³o:1qazXSW@
 
 1.b) Frontend zawiera stronê z wyœwietlan¹ list¹ dodanych urz¹dzeñ, mo¿liwoœæ dodania nowego urz¹dzenia do listy oraz usuniêcia urz¹dzenia z listy. - TAK.
 
